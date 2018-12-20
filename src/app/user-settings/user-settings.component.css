@@ -1,0 +1,19 @@
+.user-settings-wrapper {
+    padding-top: 50px;
+}
+
+.user-settings-wrapper ul {
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.user-settings-wrapper li a {
+    color: grey;
+    text-decoration: none;
+}
+
+.user-settings-wrapper li a:hover {
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+}
