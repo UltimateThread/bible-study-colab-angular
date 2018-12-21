@@ -16,13 +16,16 @@ import { BibleStudiesComponent } from './bible-studies/bible-studies.component';
 import { BibleVersesComponent } from './bible-verses/bible-verses.component';
 import { HelpComponent } from './help/help.component';
 import { RecentActivityComponent } from './recent-activity/recent-activity.component';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { UserSettingsComponent } from './user-settings/user-settings.component';
+
+import { CustomMaterialModule } from './material.module';
+
+import { AuthenticationService } from './services/authentication.service';
 
 @NgModule({
   declarations: [
@@ -45,11 +48,11 @@ import { UserSettingsComponent } from './user-settings/user-settings.component';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
-    MatToolbarModule,
+    ToastrModule.forRoot(),
+    CustomMaterialModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [AuthenticationService, ToastrService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
