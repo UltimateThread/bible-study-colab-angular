@@ -7,8 +7,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 import { appRoutes } from '../routes';
 import { BlogComponent } from './blog/blog.component';
@@ -32,8 +30,6 @@ import { AuthenticationService } from './services/authentication.service';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     BlogComponent,
     BibleStudiesComponent,
     BibleVersesComponent,
